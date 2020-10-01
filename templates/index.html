@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <style>
       .dropbtn {
         background-color: #4CAF50;
@@ -30,6 +31,11 @@
         text-decoration: none;
         display: block;
       }
+      .about-section {
+        padding: 50px;
+        text-align: left;
+        color: white;
+      }
       .dropdown-content a:hover {background-color: #ddd;}
       
       .dropdown:hover .dropdown-content {display: block;}
@@ -42,7 +48,7 @@
 
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="home.html">Home</a>
+        <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,7 +60,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="data.html">Data</a>
+        <a class="navbar-brand" href="loaddata.html">Data</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,5 +76,12 @@
           </div>
         </div>
     </nav>
+    <div class="about-section">
+    <h1>Our Motive</h1><br>
+    <p>Our group undertook an analysis concerning the occupation of parking spaces in the CBD of Melbourne, using retrived data from parking sensors in this localisation. This data was accessed from the City of Melbourne open data website (https://data.melbourne.vic.gov.au/), using API.</p>
+    <p>Due to the character of the data, it was agreed that the best method to share and present the result of our analysis would be to create a map.  This map will show the available and occupied parking spots in Melbourne, CBD. As we are concerned with live data this map will routinely update every two minutes, operating as a real time map.</p>
+    <p>In addition to this, we have created another plot using Plotly. As this plot is filtered by area name, it will show the average duration and minutes that each car spent in each parking space as corresponding to the required area.</p>
+    <p>In order to achieve our objectives for this project, we created a big SQL database, in fact joining two databases. This was evidenced utilising Sqlalchemy, as the group connected the database with Flask, in which one can see our data analysis work and plots.</p>
+  </div>
 </body>
 </html>
